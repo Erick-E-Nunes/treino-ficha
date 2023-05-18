@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+header {
+    background-color: #ce2d22;
+    margin: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .dia:hover,
+main .dia:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .semana {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .dia {
+    width: 200px;
+    padding: 15px;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .dia .dia-especifico {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+main .dia .treino {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 8px;
+    max-height: 200px;
+    overflow-y: scroll;
+    font-size: 18px;
+    padding-right: 10px;
+}
